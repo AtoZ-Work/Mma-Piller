@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=IM+Fell+DW+Pica+SC&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+body{
+  /* background: #b2ebf2 cyan lighten-4; */
+  /* background: linear-gradient(375deg, #1cc7d0, #2ede98); */
+}
+.nav-bag{
+  background: linear-gradient(180deg, #b2ebf2, #18ffff);
+  height: 3200px;
+}
+.brand-logo{
+  font-family: 'IM Fell DW Pica SC', serif;}
+
+.brand-logo span{
+    font-family: 'IM Fell DW Pica SC', serif;} 
+.main-box{
+  position: relative;
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  justify-content: space-around;
+  left: 50%;
+  bottom: auto;
+  transform: translateX(-50%);
+  width: 400px;
+  height: 550px;
+  text-align: center;
+}
+#nav-mobile li a{
+  font-family: 'Poppins',sans-serif !important;
+}
+#nav-mobile li a:hover{
+  font-family: 'Poppins',sans-serif !important;
+  color: cyan;
+}
+.main-box .content{
+  position: relative;
+  height: 110%;
+  width: 100%;
+}
+.content1{
+  height: 30%;
+  /* width: 100%;
+  background-color: #f50057; */
+}
+.content .box{
+  position: absolute;
+  height: 50px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  border-radius: 25px;
+  cursor: pointer;
+}
+.share, .cancel{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #0d47a1;
+  line-height: 50px;
+  background: #fff;
+  letter-spacing: 1px;
+  border-radius: 25px;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.content .box .share{
+  opacity: 1;
+}
+#check1:checked ~ .box .share{
+  opacity: 0;
+}
+#check1:checked ~ .box .cancel{
+  opacity: 1;
+}
+#check2:checked ~ .box .share{
+  opacity: 0;
+}
+#check2:checked ~ .box .cancel{
+  opacity: 1;
+}
+#check3:checked ~ .box .share{
+  opacity: 0;
+}
+#check3:checked ~ .box .cancel{
+  opacity: 1;
+}
+#check4:checked ~ .box .share{
+  opacity: 0;
+}
+#check4:checked ~ .box .cancel{
+  opacity: 1;
+}
+#check5:checked ~ .box .share{
+  opacity: 0;
+}
+#check5:checked ~ .box .cancel{
+  opacity: 1;
+}
+.content .image-box{
+  position: absolute;
+  height: 450px;
+  width: 100%;
+  bottom: 130px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  padding: 10px;
+  border-radius: 25px;
+  transition: all 0.4s ease;
+}
+#check1:checked ~ .image-box{
+  bottom: 70px;
+}
+#check1{
+  display: none;
+}
+#check2:checked ~ .image-box{
+  bottom: 70px;
+}
+#check2{
+  display: none;
+}
+#check3:checked ~ .image-box{
+  bottom: 70px;
+}
+#check3{
+  display: none;
+}
+#check4:checked ~ .image-box{
+  bottom: 70px;
+}
+#check4{
+  display: none;
+}
+#check5:checked ~ .image-box{
+  bottom: 70px;
+}
+#check5{
+  display: none;
+}
+.image-box::before{
+  position: absolute;
+  content: '';
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  height: 30px;
+  width: 30px;
+  background: #fff;
+  z-index: -1;
+}
+.image-box img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 26px;
+}
+.image-box .about{
+  position: absolute;
+  background: rgba(0,0,0,0.5);
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 25px;
+  
+  padding: 20px;
+  text-align: center;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+#check1:checked ~ .image-box .about{
+  opacity: 1;
+}
+#check2:checked ~ .image-box .about{
+  opacity: 1;
+}
+#check3:checked ~ .image-box .about{
+  opacity: 1;
+}
+#check4:checked ~ .image-box .about{
+  opacity: 1;
+}
+#check5:checked ~ .image-box .about{
+  opacity: 1;
+}
+.about .details{
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 35px;
+}
+.details .name, .job{
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+}
+ .details .icon i{
+   font-size: 20px;
+   color: #fff;
+   height: 45px;
+   width: 45px;
+   line-height: 43px;
+   border-radius: 50%;
+   border: 2px solid #fff;
+   margin: 14px 5px;
+   transition: all 0.3s ease;
+ }
+.details .icon i:hover{
+  transform: scale(0.95);
+}
